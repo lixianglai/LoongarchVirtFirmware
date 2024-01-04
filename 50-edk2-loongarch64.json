@@ -1,0 +1,21 @@
+  {
+     "interface-types": [
+       "uefi"
+     ],
+     "mapping": {
+       "device": "memory",
+       "filename": "/usr/share/edk2/loongarch64/QEMU_EFI.fd"
+     },
+     "targets": [
+       {
+         "architecture": "loongarch64",
+         "machines": [
+           "virt",
+           "virt-*"
+         ]
+       }
+     ],
+     "features": [
+         "acpi"
+     ]
+   } 
