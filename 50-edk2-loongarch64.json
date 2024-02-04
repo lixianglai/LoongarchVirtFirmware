@@ -3,8 +3,16 @@
        "uefi"
      ],
      "mapping": {
-       "device": "memory",
-       "filename": "/usr/share/edk2/loongarch64/QEMU_EFI.fd"
+       "device": "flash",
+       "mode": "split",
+       "executable": {
+         "filename": "/usr/share/edk2/loongarch64/QEMU_EFI.fd",
+         "format": "raw"
+       },
+       "nvram-template": {
+         "filename": "/usr/share/edk2/loongarch64/QEMU_VARS.fd",
+         "format": "raw"
+       }
      },
      "targets": [
        {
@@ -17,5 +25,5 @@
      ],
      "features": [
          "acpi"
-     ]
-   } 
+    ]
+  }
