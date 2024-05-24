@@ -1,5 +1,6 @@
 #!/usr/bin/bash
 
+mkdir /usr/share/qemu/firmeare
 cp ./50-edk2-loongarch64.json /usr/share/qemu/firmware
 mkdir -pv /usr/share/edk2/loongarch64
 cp ./QEMU_EFI.fd  /usr/share/edk2/loongarch64
